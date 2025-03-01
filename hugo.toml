@@ -11,27 +11,3 @@ pagination.pagerSize = 5
   showMenuItems = 2
   fullWidthTheme = false
   centerTheme = false
-
-[languages]
-  [languages.en]
-    title = "Craft4Fun"
-    subtitle = "我的个人博客"
-    keywords = "博客,技术,创意"
-    copyright = "© 2023-2024"
-    menuMore = "显示更多"
-    readMore = "阅读全文"
-    readOtherPosts = "阅读其他文章"
-
-    [languages.en.params.logo]
-      logoText = "craft4fun"
-      logoHomeLink = "https://pixelcrafter42.github.io/craft4fun.githun.io/"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
