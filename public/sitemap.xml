@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/first-blog/</loc>
+    <loc>https://pixelcrafter42.github.io/craft4fun.githun.io/posts/first-blog/</loc>
     <lastmod>2025-03-01T07:29:43+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>https://pixelcrafter42.github.io/craft4fun.githun.io/</loc>
     <lastmod>2025-03-01T07:29:43+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>https://pixelcrafter42.github.io/craft4fun.githun.io/posts/</loc>
     <lastmod>2025-03-01T07:29:43+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>https://pixelcrafter42.github.io/craft4fun.githun.io/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>https://pixelcrafter42.github.io/craft4fun.githun.io/tags/</loc>
   </url>
 </urlset>
