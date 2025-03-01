@@ -1,6 +1,37 @@
 baseURL = 'https://pixelcrafter42.github.io/craft4fun.githun.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
 theme = "terminal"
-[outputs]
-home = [ "HTML", "RSS", "JSON" ]
+languageCode = "zh-cn"
+pagination.pagerSize = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = false
+
+[languages]
+  [languages.zh]
+    title = "终端"
+    subtitle = "一个简单、复古的Hugo主题"
+    keywords = ""
+    copyright = ""
+    menuMore = "显示更多"
+    readMore = "阅读更多"
+    readOtherPosts = "阅读其他文章"
+
+    [languages.zh.params.logo]
+      logoText = "终端"
+      logoHomeLink = "/"
+
+    [languages.zh.menu]
+      [[languages.zh.menu.main]]
+        identifier = "about"
+        name = "关于"
+        url = "/about"
+      [[languages.zh.menu.main]]
+        identifier = "showcase"
+        name = "作品展示"
+        url = "/showcase"
