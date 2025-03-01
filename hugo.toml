@@ -1,6 +1,6 @@
 baseurl = "https://pixelcrafter42.github.io/craft4fun.githun.io/"
 languageCode = "en-us"
-theme = "hugo-theme-terminal"
+theme = "terminal"
 pagination.pagerSize = 5
 
 [markup.goldmark.renderer]
