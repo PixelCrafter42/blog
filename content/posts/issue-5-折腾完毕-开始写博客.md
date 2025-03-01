@@ -7,5 +7,5 @@ issue_url = "https://github.com/PixelCrafter42/craft4fun.githun.io/issues/5"
 author = "PixelCrafter42"
 tags = ["blog"]
 +++
-
+<!--more-->
 <img width="1280" alt="Image" src="https://github.com/user-attachments/assets/9b4df152-43c1-422e-89c6-6a372f39c62e" />
