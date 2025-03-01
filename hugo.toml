@@ -1,6 +1,6 @@
-baseURL = 'https://pixelcrafter42.github.io/craft4fun.githun.io/'
-theme = "terminal"
-languageCode = "zh-cn"
+baseurl = "https://pixelcrafter42.github.io/craft4fun.githun.io/"
+languageCode = "en-us"
+theme = "hugo-theme-terminal"
 pagination.pagerSize = 5
 
 [markup.goldmark.renderer]
@@ -13,25 +13,25 @@ pagination.pagerSize = 5
   centerTheme = false
 
 [languages]
-  [languages.zh]
-    title = "终端"
-    subtitle = "一个简单、复古的Hugo主题"
+  [languages.en]
+    title = "Terminal"
+    subtitle = "A simple, retro theme for Hugo"
     keywords = ""
     copyright = ""
-    menuMore = "显示更多"
-    readMore = "阅读更多"
-    readOtherPosts = "阅读其他文章"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
 
-    [languages.zh.params.logo]
-      logoText = "终端"
+    [languages.en.params.logo]
+      logoText = "Terminal"
       logoHomeLink = "/"
 
-    [languages.zh.menu]
-      [[languages.zh.menu.main]]
+    [languages.en.menu]
+      [[languages.en.menu.main]]
         identifier = "about"
-        name = "关于"
+        name = "About"
         url = "/about"
-      [[languages.zh.menu.main]]
+      [[languages.en.menu.main]]
         identifier = "showcase"
-        name = "作品展示"
+        name = "Showcase"
         url = "/showcase"
