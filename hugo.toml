@@ -14,13 +14,13 @@ pagination.pagerSize = 5
 
 [languages]
   [languages.en]
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
+    title = "Craft4Fun"
+    subtitle = "我的个人博客"
+    keywords = "博客,技术,创意"
+    copyright = "© 2023-2024"
+    menuMore = "显示更多"
+    readMore = "阅读全文"
+    readOtherPosts = "阅读其他文章"
 
     [languages.en.params.logo]
       logoText = "craft4fun"
