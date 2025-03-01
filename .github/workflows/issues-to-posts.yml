@@ -2,13 +2,13 @@ name: Convert Issues to Posts
 
 on:
   issues:
-    types: [opened, edited, labeled]
+    types: [labeled]
   workflow_dispatch:
 
 jobs:
   convert-issues:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.labels.*.name, 'blog')
+    if: github.event.issue.labels != null && join(github.event.issue.labels.*.name) != ''
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -39,6 +39,7 @@ jobs:
           python -c "
           import os
           import re
+          import json
           from datetime import datetime
           from github import Github
 
@@ -55,15 +56,12 @@ jobs:
           repo = g.get_repo(repo_name)
           issue = repo.get_issue(issue_number)
 
-          # 检查是否有'blog'标签
-          has_blog_label = False
-          for label in issue.labels:
-              if label.name == 'blog':
-                  has_blog_label = True
-                  break
-
-          if not has_blog_label:
-              print('Issue does not have blog label, skipping')
+          # 获取issue的所有标签
+          labels = [label.name for label in issue.labels]
+          
+          # 如果没有标签，跳过处理
+          if not labels:
+              print('Issue does not have any labels, skipping')
               exit(0)
 
           # 格式化日期时间
@@ -74,6 +72,9 @@ jobs:
           slug = re.sub(r'[^a-zA-Z0-9\u4e00-\u9fa5]+', '-', issue_title.lower()).strip('-')
           filename = f'content/posts/issue-{issue_number}-{slug}.md'
 
+          # 将标签格式化为TOML数组格式
+          tags_str = json.dumps(labels, ensure_ascii=False)
+          
           # 创建Front Matter
           front_matter = f'''+++
           date = \'{formatted_date}\'
@@ -82,6 +83,7 @@ jobs:
           issue_number = {issue_number}
           issue_url = \"https://github.com/{repo_name}/issues/{issue_number}\"
           author = \"{issue.user.login}\"
+          tags = {tags_str}
           +++
 
           {issue_body}
