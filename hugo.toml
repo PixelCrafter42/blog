@@ -23,8 +23,8 @@ pagination.pagerSize = 5
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
-      logoHomeLink = "/"
+      logoText = "craft4fun"
+      logoHomeLink = "https://pixelcrafter42.github.io/craft4fun.githun.io/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
