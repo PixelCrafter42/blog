@@ -80,8 +80,6 @@ jobs:
           date = \'{formatted_date}\'
           draft = false
           title = \'{issue_title}\'
-          issue_number = {issue_number}
-          issue_url = \"https://github.com/{repo_name}/issues/{issue_number}\"
           author = \"{issue.user.login}\"
           tags = {tags_str}
           +++
