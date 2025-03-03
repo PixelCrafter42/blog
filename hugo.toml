@@ -1,4 +1,4 @@
-baseurl = "https://pixelcrafter42.github.io/craft4fun.githun.io/"
+baseurl = "https://craft4.fun/"
 languageCode = "en-us"
 theme = "terminal"
 pagination.pagerSize = 5
@@ -16,3 +16,23 @@ pagination.pagerSize = 5
   MenuMore = "更多"
   title = "Craft4Fun"
   subtitle = "我的个人博客"
+
+  [languages]
+  [languages.en]
+    title = "Craft4Fun"
+    subtitle = "我的个人博客"
+    keywords = "博客,技术,创意"
+    copyright = "© 2023-2024"
+    MenuMore = "显示更多"
+    ReadMore = "阅读全文"
+    ReadOtherPosts = "阅读其他文章"
+
+    [languages.en.params.logo]
+      logoText = "Craft4Fun"
+      logoHomeLink = "https://craft4.fun/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
