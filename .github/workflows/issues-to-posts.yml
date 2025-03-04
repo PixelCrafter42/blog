@@ -2,7 +2,7 @@ name: Convert Issues to Posts
 
 on:
   issues:
-    types: [labeled]
+    types: [labeled,edited]
   workflow_dispatch:
 
 jobs:
