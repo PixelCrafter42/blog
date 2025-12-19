@@ -1,14 +1,12 @@
 baseurl = "https://craft4.fun/"
 languageCode = "en-us"
-# 将此处修改为 PaperMod
-theme = "PaperMod"
+theme = "terminal"
 pagination.pagerSize = 5
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [params]
-  # 注意：不同主题的 params 参数名称可能不同，切换主题后可能需要根据新主题文档调整以下内容
   contentTypeName = "posts"
   showMenuItems = 2
   fullWidthTheme = true
