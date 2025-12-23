@@ -1,38 +1,62 @@
 baseurl = "https://craft4.fun/"
-languageCode = "en-us"
-theme = "terminal"
+languageCode = "zh-cn"
+title = "Craft4Fun"
+theme = "PaperMod"
 pagination.pagerSize = 5
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [params]
-  contentTypeName = "posts"
-  showMenuItems = 2
-  fullWidthTheme = true
-  centerTheme = false
-  ReadMore = "阅读全文"
-  ReadOtherPosts = "阅读其他文章"
-  MenuMore = "更多"
+  env = "production"
   title = "Craft4Fun"
-  subtitle = "我的个人博客"
+  description = "我的个人博客"
+  author = "Craft4Fun"
 
-  [languages]
-  [languages.en]
+  # 显示阅读时间
+  ShowReadingTime = true
+  # 显示分享按钮
+  ShowShareButtons = true
+  # 显示文章元信息
+  ShowPostNavLinks = true
+  # 显示面包屑导航
+  ShowBreadCrumbs = true
+  # 显示代码复制按钮
+  ShowCodeCopyButtons = true
+  # 显示字数统计
+  ShowWordCount = true
+  # 显示目录
+  ShowToc = true
+  # 默认主题模式 (auto, dark, light)
+  defaultTheme = "auto"
+
+  # 主页信息
+  [params.homeInfoParams]
+    Title = "欢迎来到 Craft4Fun"
+    Content = "我的个人博客 - 分享技术与创意"
+
+  # 社交链接图标
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com"
+
+[languages]
+  [languages.zh-cn]
+    languageName = "简体中文"
+    weight = 1
     title = "Craft4Fun"
-    subtitle = "我的个人博客"
-    keywords = "博客,技术,创意"
-    copyright = "© 2023-2024"
-    MenuMore = "显示更多"
-    ReadMore = "阅读全文"
-    ReadOtherPosts = "阅读其他文章"
 
-    [languages.en.params.logo]
-      logoText = "Craft4Fun"
-      logoHomeLink = "https://craft4.fun/"
+    [languages.zh-cn.params]
+      subtitle = "我的个人博客"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
+    [[languages.zh-cn.menu.main]]
+      identifier = "about"
+      name = "关于"
+      url = "/about"
+      weight = 10
+
+    [[languages.zh-cn.menu.main]]
+      identifier = "posts"
+      name = "文章"
+      url = "/posts"
+      weight = 20
