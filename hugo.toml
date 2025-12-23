@@ -1,5 +1,6 @@
 baseurl = "https://craft4.fun/"
 languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
 title = "Craft4Fun"
 theme = "PaperMod"
 pagination.pagerSize = 5
