@@ -2,62 +2,75 @@ baseurl = "https://craft4.fun/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "Craft4Fun"
-theme = "PaperMod"
-pagination.pagerSize = 5
+theme = "hugo-theme-stack"
+paginate = 5
+
+# 主题版权声明（Stack 主题要求）
+[params.footer]
+since = 2023
+customText = "Theme Stack designed by Jimmy"
+
+[params.sidebar]
+emoji = "🎮"
+subtitle = "我的个人博客 - 分享技术与创意"
+
+[params.sidebar.avatar]
+enabled = true
+local = false
+src = "https://avatars.githubusercontent.com/u/1?v=4"
+
+[params.article]
+math = false
+toc = true
+readingTime = true
+license.enabled = false
+
+[params.comments]
+enabled = false
+
+[params.widgets]
+homepage = []
+page = []
 
 [markup.goldmark.renderer]
-  unsafe = true
+unsafe = true
 
-[params]
-  env = "production"
-  title = "Craft4Fun"
-  description = "我的个人博客"
-  author = "Craft4Fun"
+[markup.tableOfContents]
+endLevel = 4
+ordered = true
+startLevel = 2
 
-  # 显示阅读时间
-  ShowReadingTime = true
-  # 显示分享按钮
-  ShowShareButtons = true
-  # 显示文章元信息
-  ShowPostNavLinks = true
-  # 显示面包屑导航
-  ShowBreadCrumbs = true
-  # 显示代码复制按钮
-  ShowCodeCopyButtons = true
-  # 显示字数统计
-  ShowWordCount = true
-  # 显示目录
-  ShowToc = true
-  # 默认主题模式 (auto, dark, light)
-  defaultTheme = "auto"
+[markup.highlight]
+noClasses = false
+codeFences = true
+guessSyntax = true
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+tabWidth = 4
 
-  # 主页信息
-  [params.homeInfoParams]
-    Title = "欢迎来到 Craft4Fun"
-    Content = "我的个人博客 - 分享技术与创意"
+[languages.zh-cn]
+languageName = "简体中文"
+title = "Craft4Fun"
+weight = 1
 
-  # 社交链接图标
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com"
+[languages.zh-cn.params]
+description = "我的个人博客"
 
-[languages]
-  [languages.zh-cn]
-    languageName = "简体中文"
-    weight = 1
-    title = "Craft4Fun"
+[[languages.zh-cn.menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 1
 
-    [languages.zh-cn.params]
-      subtitle = "我的个人博客"
+[[languages.zh-cn.menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about"
+weight = 2
 
-    [[languages.zh-cn.menu.main]]
-      identifier = "about"
-      name = "关于"
-      url = "/about"
-      weight = 10
-
-    [[languages.zh-cn.menu.main]]
-      identifier = "posts"
-      name = "文章"
-      url = "/posts"
-      weight = 20
+[[languages.zh-cn.menu.main]]
+identifier = "posts"
+name = "文章"
+url = "/posts"
+weight = 3
