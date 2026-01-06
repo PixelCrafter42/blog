@@ -3,7 +3,9 @@ languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "Craft4Fun"
 theme = "hugo-theme-stack"
-paginate = 5
+
+[pagination]
+pagerSize = 5
 
 # 主题版权声明（Stack 主题要求）
 [params.footer]
